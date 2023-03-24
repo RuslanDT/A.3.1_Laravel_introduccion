@@ -14,10 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('photofolio');
 });
 
+Route::get('/personas', function () {
+    return view('personitas');
+});
 
-Route::get('/PhotoFolio', function () {
-    return view('photofolio');
+Route::get('/deportes', function () {
+    return view('deportitos');
+});
+
+Route::get('/viajes', function () {
+    return view('viajesitos');
 });
